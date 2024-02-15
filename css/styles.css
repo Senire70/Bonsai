@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Proximanova opt', sans-serif;
+
+    body {
+
+        header {
+            width: 100%;
+            height: auto;
+            position: fixed;
+            top: 0;
+            background-color: white;
+            /* padding: 0 6.7% 0 5.5%; */
+            box-sizing: border-box;
+            background-color: white;
+
+            min-height: 5rem;
+            max-height: 500px;
+            padding: 0 5%;
+
+
+
+            nav {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+
+                > div {
+                    margin: 1rem 0;
+                }
+
+                .logo-container {
+                    max-width: 100%;
+                    min-width: 15%;
+                    flex: 1 1 160px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+
+                    .logo {
+                        display: flex;
+                        align-items: center;
+
+                        .icon {
+                            width: 50px;
+                            aspect-ratio: 1/1;
+                            margin-right: 5px;
+                            position: relative;
+
+                            .line {
+                                position: absolute;
+                                background-color: #00b289;
+                                height: 5px;
+                                width: 35px;
+                                bottom: 0;
+                            }
+
+                            .line-1 {
+                                width: 30px;
+
+                                bottom: 10px;
+                                right: 10px;
+                                border-radius: 0px 0px 20px 100px;
+                            }
+
+                            .line-2 {
+                                width: 36px;
+                                bottom: 26px;
+                                right: -7px;
+                                border-radius: 50px 50px 0px 100px;
+                                transform: rotate(90deg);
+                            }
+
+                            .line-3 {
+                                top: 5px;
+                                right: 8px;
+                                border-radius: 100% 50px 50px 50px;
+                                width: 23px;
+                                z-index: 20;
+                            }
+
+                            .line-4 {
+                                width: 22px;
+                                transform: rotate(90deg);
+                                top: 13px;
+                                left: 8px;
+                                border-radius: 50px 50px 0;
+                                z-index: 10;
+                                border: 1px solid white;
+                            }
+
+                            .line-5 {
+                                width: 23px;
+                                transform: rotate(90deg);
+                                bottom: 20px;
+                                left: 0px;
+                                border-radius: 0 0 100px 0;
+                            }
+
+                            .line-6 {
+                                width: 20px;
+                                left: 10px;
+                                top: 15px;
+                                border-radius: 0 50px 50px 0;
+                            }
+
+                            .line-7 {
+                                z-index: 20;
+                                width: 15px;
+                                left: 17px;
+                                bottom: 19px;
+                                border-radius: 50px;
+                            }
+
+                            .line-8 {
+                                width: 14px;
+                                transform: rotate(90deg);
+                                top: 20px;
+                                right: 14px;
+                            }
+
+                            .border {
+                                width: 15px;
+                                height: 15px;
+                                border-top: 5px solid white;
+                                border-radius: 50%;
+                                position: absolute;
+                                transform: rotate(35deg);
+                                top: 0px;
+                                right: 7px;
+                                z-index: 30;
+                            }
+                        }
+
+                        .logotype {
+                            font-size: 32px;
+                            color: #00b289;
+                            font-weight: 1000;
+                            letter-spacing: 2px;
+                            font-family: "Sorts Mill Goudy", serif;
+                        }
+                    }
+                }
+
+                .nav-main {
+                    display: flex;
+                    align-items: center;
+                    flex: 1 1 270px;
+                    justify-content: center;
+                    min-width: 30%;
+                    max-width: 100%;
+                    color: rgba(0, 0, 0, 0.704);
+                    flex-wrap: wrap;
+
+
+                    * {
+                        box-sizing: border-box;
+                    }
+
+
+                    a {
+                        flex: 1 1 100px;
+                        cursor: pointer;
+                        margin-left: 5%;
+                        min-width: 50px;
+                        max-width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 10px;
+
+                        ion-icon {
+                            transform: translateY(4px);
+                        }
+                    }
+
+                    .element-1, .element-3 {
+                        margin-right: 1%;
+                    }
+                    
+                }
+
+                .buttons-container {
+                    min-width: 20%;
+                    max-width: 100%;
+                    flex: 1 1 100px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+
+                    button {
+                        border: none;
+                        background-color: white;
+                        font-size: 14px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        height: 2.5rem;
+                        border-radius: 5px;
+                        transition: 100ms;
+                        margin: 0.25rem;
+                    }
+
+                    .element-1 {
+                        border: 1px solid #00b289;
+                        color: #00b289;
+                        padding: 0 7%;
+                        min-width: 75px;
+                        max-width: 100%;
+                    }
+
+                    .element-1:hover {
+                        background-color: #00b289;
+                        color: white;
+                        
+                    }
+
+                    .element-2 {
+                        color: white;
+                        background-color: #00b289;
+                        padding: 0 8%;
+                        min-width: 100px;
+                        max-width: 100%;
+                    }
+
+                    .element-2:hover {
+                        background-color: #129274;
+                    }
+                }
+            }
+        }
+    }
+}
