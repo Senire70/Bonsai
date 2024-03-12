@@ -733,8 +733,8 @@
 
                         .container {
                             position: relative;
-                            overflow: hidden;
-                            height: 3em;
+                            /* overflow: hidden;
+                            height: 3em; */
 
 
 
@@ -766,11 +766,16 @@
                                 font-weight: 100;
                                 width: 95%;
                                 line-height: 1.8em;
+                                display: none
                             }
                         }
 
                         .container.active {
-                            height: auto;
+                            /* height: auto; */
+
+                            .content {
+                                display: block;
+                            }
 
                             ion-icon {
                                 transform: rotate(180deg);
@@ -787,5 +792,3 @@
 
 
 
-
-@media screen and (max-width:330px) {}
