@@ -243,6 +243,7 @@
                         border-radius: 5px;
                         transition: 100ms;
                         margin: 0.25rem;
+                        cursor: pointer;
                     }
 
                     .element-1 {
@@ -695,6 +696,7 @@
                             height: 3rem;
                             border-radius: 5px;
                             transition: 100ms;
+                            cursor: pointer;
                         }
 
 
@@ -735,6 +737,7 @@
                             height: 3em;
 
 
+
                             .label:hover {
                                 color: #00b289;
 
@@ -749,6 +752,7 @@
                                 margin: 0.8em 0;
                                 color: rgba(0, 0, 0, 0.8);
                                 position: relative;
+                                cursor: pointer;
 
                                 ion-icon {
                                     position: absolute;
