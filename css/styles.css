@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Sorts+Mill+Goudy:ital@0;1&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: 'Proximanova opt', sans-serif;
+    font-family: sans-serif;
 
     body {
         z-index: -10;
         overflow-x: hidden;
         box-sizing: border-box;
+        background-color: w;
 
         header {
             width: 100%;
@@ -41,7 +42,7 @@
                     /* margin: 0.2rem 0; */
                     align-items: center;
                     align-self: center;
-                    }
+                }
 
                 .logo-container {
                     max-width: 100%;
@@ -191,9 +192,6 @@
                     flex-wrap: wrap;
 
 
-                    * {
-                        box-sizing: border-box;
-                    }
 
 
                     a {
@@ -203,13 +201,13 @@
                         min-width: 50px;
                         max-width: 100%;
                         display: flex;
-                        justify-content: center;
                         margin-top: 10px;
 
 
                         ion-icon {
                             transform: translate(8px, 2px);
                             font-size: 18px;
+                            min-width: 18px;
                         }
                     }
 
@@ -281,6 +279,7 @@
             box-sizing: border-box;
             width: 100%;
             z-index: 0;
+            padding-bottom: 50px;
 
 
             .background {
@@ -290,7 +289,7 @@
                 overflow-x: hidden;
                 box-sizing: border-box;
                 max-width: 100%;
-                background-color: whitesmoke;
+                background-color: white;
 
                 .rotate-square {
                     max-width: 100%;
@@ -306,7 +305,7 @@
                 margin: 0 5%;
                 padding: 180px 0 0 0;
                 display: flex;
-                overflow-x: hidden;
+                /* overflow-x: hidden; */
                 flex-flow: column;
                 align-items: center;
 
@@ -326,7 +325,9 @@
                         flex: 1 1 1fr;
                         min-width: 30%;
                         max-width: 100%;
+                        margin-right: 5%;
                         text-align: center;
+                        font-family: 'Sorts Mill Goudy';
                     }
 
                     .container {
@@ -419,7 +420,7 @@
                     width: 100%;
                     display: flex;
                     flex-flow: wrap;
-                    box-sizing: border-box;
+                    /* box-sizing: border-box; */
                     overflow-x: hidden;
                     font-size: 16px;
 
@@ -429,16 +430,18 @@
                         flex: 1 1 17.25em;
                         max-width: 100%;
                         min-width: 30%;
-                        height: 57.125em;
+                        height: 57rem;
                         padding: 4.65em 3.7%;
-                        margin: 0 1% 2em;
+                        margin: 0 1% 100px;
                         box-sizing: border-box;
                         overflow: hidden;
-                        background-color: white;
+                        background-color: #f2faff;
                         border: 1px solid rgba(0, 0, 0, 0.2);
                         border-radius: 4px;
                         color: rgba(0, 0, 0, 0.7);
                         position: relative;
+                        box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.03),
+                            5px -5px 15px rgba(0, 0, 0, 0.09);
 
                         .tag {
                             height: 2.5em;
@@ -550,10 +553,234 @@
                         }
                     }
                 }
+
+                .main-footer {
+                    width: 100%;
+                    display: flex;
+                    flex-flow: column wrap;
+                    font-size: 20px;
+                    color: rgba(0, 0, 0, 0.75);
+                    /* box-sizing: border-box; */
+
+                    >h2 {
+                        margin-bottom: 40px;
+                        align-self: center;
+                        font-family: sans-serif;
+                        font-style: italic;
+                        font-weight: 300;
+                    }
+
+                    >div {
+
+                        >.container {
+                            padding: 2em 10% 2em 4.5%;
+                            margin: 0 10px 0.5em;
+                            background-color: white;
+                            display: flex;
+                            justify-content: space-between;
+                            line-height: 1.4em;
+                            color: rgba(0, 0, 0, 0.75);
+                            box-shadow: 0 0 45px rgba(0, 0, 0, 0.05);
+
+
+                            .left {
+                                margin-right: 1rem;
+
+                                h3 {
+                                    font-size: 1em;
+                                }
+
+                                p {
+                                    font-size: 0.8em;
+                                    font-weight: 100;
+                                }
+
+                                a {
+                                    font-size: 0.6em;
+                                    font-weight: 700;
+                                    color: #00b289;
+                                    display: flex;
+
+                                    ion-icon {
+                                        font-size: 1.3em;
+                                        align-self: center;
+                                        transform: translateX(10%);
+                                        transition: all .5s;
+                                    }
+
+
+                                }
+
+                                a:hover ion-icon {
+                                    transform: translateX(50%);
+                                }
+                            }
+
+
+                            .price {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 2.5em;
+                                font-weight: 600;
+                                flex-wrap: wrap;
+                                width: 2em;
+
+                                * {
+                                    font-family: "Noto Sans Display", sans-serif !important;
+                                }
+                            }
+
+                            .price::before {
+                                content: "$";
+                                font-size: 1.1em;
+
+                            }
+
+                            .price::after {
+                                content: "/MONTH";
+                                font-size: 0.25em;
+                                font-weight: 500;
+                                margin-top: 15px;
+                                letter-spacing: 2px;
+
+                            }
+
+                            .free {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 1.5em;
+                                font-weight: 600;
+                                width: 100px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer {
+
+                margin: auto 13.5%;
+
+
+                .card {
+                    background-color: #f2faff;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    padding: 4em 5%;
+                    margin-bottom: 7.5rem;
+                    border-radius: 5px;
+
+
+                    .left {
+                        width: 60%;
+                        font-size: 2.5em;
+                    }
+
+                    .rigth {
+                        width: 30%;
+                        display: flex;
+                        justify-content: end;
+                        align-items: center;
+
+
+                        button {
+                            border: none;
+                            background-color: white;
+                            font-size: 14px;
+                            font-weight: normal;
+                            text-transform: uppercase;
+                            height: 3rem;
+                            border-radius: 5px;
+                            transition: 100ms;
+                        }
+
+
+                        .element-2 {
+                            color: white;
+                            background-color: #18987a;
+                            padding: 0 10%;
+                            min-width: 100px;
+                            max-width: 100%;
+                        }
+
+                        .element-2:hover {
+                            background-color: #00b289;
+                        }
+                    }
+                }
+
+                .footer-main {
+                    width: 82%;
+                    margin: 0 auto;
+
+                    .footer-main_top {
+
+                        h2 {
+                            text-align: center;
+                            font-size: 2rem;
+                            color: #00b289;
+                            margin-bottom: 1.5em;
+                        }
+                    }
+
+                    .accordion {
+                        font-size: 16px;
+
+                        .container {
+                            position: relative;
+                            overflow: hidden;
+                            height: 3em;
+
+
+                            .label:hover {
+                                color: #00b289;
+
+                                ion-icon {
+                                    color: rgba(0, 0, 0, 0.59);
+                                }
+                            }
+
+                            .label {
+                                font-size: 1.5em;
+                                font-weight: bold;
+                                margin: 0.8em 0;
+                                color: rgba(0, 0, 0, 0.8);
+                                position: relative;
+
+                                ion-icon {
+                                    position: absolute;
+                                    right: 0;
+                                    color: rgba(0, 0, 0, 0.59);
+                                }
+                            }
+
+                            .content {
+                                color: rgba(0, 0, 0, 0.8);
+                                font-weight: 100;
+                                width: 95%;
+                                line-height: 1.8em;
+                            }
+                        }
+
+                        .container.active {
+                            height: auto;
+
+                            ion-icon {
+                                transform: rotate(180deg);
+                                transition: 500ms;
+
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 }
+
 
 
 
