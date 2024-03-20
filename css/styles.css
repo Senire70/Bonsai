@@ -899,7 +899,7 @@
                             }
                         }
 
-                        .container.active {
+                        .container:hover {
                             /* height: auto; */
 
                             .content {
